@@ -1,0 +1,145 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Ubuntu:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@500&family=Ubuntu:wght@300;500;700&display=swap');
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #cdc5bc;
+}
+
+/* Navbar */
+#navbar {
+    line-height: 4rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    border-bottom: 0.5px solid #ffffff52;
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+#navbar ul li {
+    margin: 0 1rem;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    padding: 0.5rem 0.9rem;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    #navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+    #navbar ul {
+        flex-direction: column;
+    }
+}
+
+/* Home Section */
+.home-left, .home-right {
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+}
+
+.home-left h1 {
+    font-size: 3rem;
+}
+
+.home-right img {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+    .home-left, .home-right {
+        width: 50%;
+    }
+}
+
+/* About Section */
+.about-left, .about-right {
+    width: 100%;
+    padding: 2rem;
+}
+
+.about-left img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+@media (min-width: 768px) {
+    .about-left, .about-right {
+        width: 50%;
+    }
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skills-left, .skills-right {
+    width: 100%;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .skills-left, .skills-right {
+        width: 50%;
+    }
+}
+
+/* Projects */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projects-item {
+    width: 100%;
+    max-width: 300px;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .projects-item {
+        width: 30%;
+    }
+}
+
+/* Footer */
+#footer {
+    text-align: center;
+    padding: 1rem;
+    background: #656145;
+    color: white;
+}
